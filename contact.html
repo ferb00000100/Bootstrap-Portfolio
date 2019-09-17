@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Contact</title>
+	<title>Grid</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+		body {
+			margin: 20px;
+		}
+		.my-container {
+			border: 1px solid;
+		}
+		.my-row {
+			border: 2px solid blue;
+			height: 300px;
+		}
+		.my-col {
+			border: 2px dotted;
+			height: 100px;
+		}
+
+		.top-margin {
+			margin-top: 10px;
+		}
+	</style>
+
 </head>
 <body>
 
-</body>
-</html>
+<div class="container">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow p-2 mb rounded">
+		<img src="assets/images/cycling_pic.png" alt="brand_pic" width="30" height="30">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="portfolio.html">Portfolio</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			</ul>
+			<h2 class="h2 text-white">Jason Martin</h2>
+		</div>
+	</nav>
+</div>
