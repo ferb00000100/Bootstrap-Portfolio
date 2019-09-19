@@ -179,7 +179,7 @@ p {
 section {
     border-color: #cccccc;
     border-top-style: solid;
-    background: url("../images/qbkls.png");
+    background: url("../../images/qbkls.png");
     background-repeat: repeat;
     height: 100%;
     width: 100%;
@@ -195,7 +195,7 @@ section {
     /*background-color: darkred;*/
     /*max-height: 340px; !* Have a max-height *!*/
     overflow-x: auto; /* To have a scrollbar if needed */
-    background: url("../images/qbkls.png");
+    background: url("../../images/qbkls.png");
 }
 
 /* the main article settings for positioning and alignment */

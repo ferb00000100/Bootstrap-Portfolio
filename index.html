@@ -2,138 +2,91 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Grid</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Bootstrap Portfolio</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<style>
-		body {
-			margin: 20px;
-			/*background-color: lightgrey;*/
-		}
-		.my-container {
-			border: 1px solid;
-		}
-		.my-row {
-			border: 2px solid blue;
-			height: 300px;
-		}
-		.my-col {
-			border: 2px dotted;
-			height: 100px;
-		}
-
-		.top-margin {
-			margin-top: 10px;
-		}
-		.left-margin {
-			margin-left: 30px;
-		}
-		.my-padding {
-			padding: 3px;
-		}
-	</style>
-
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <div class="container">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow p-2 mb rounded">
-		<img src="assets/images/cycling_pic.png" alt="brand_pic" width="30" height="30">
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="portfolio.html">Portfolio</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="contact.html">Contact</a>
-				</li>
-			</ul>
-			<h2 class="h2 text-white">Jason Martin</h2>
+	<nav class="navbar col-md-12 navbar-toggleable-md navbar-expand-lg navbar-dark bg-dark shadow p-2 mb rounded" style="padding: 1px; width: 100%">
+		<img src="assets/images/cycling_pic.png" alt="brand_pic" width="60px" height="60px">
+
+		<button id="nav-btn" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="container">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html"><h5>About</h5></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="portfolio.html"><h5>Portfolio</h5></a>
+					</li>
+						<a class="nav-link" href="contact.html"><h5>Contact</h5></a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 </div>
 
 <div class="container">
-	<div class="row justify-content-between align-items-top top-margin">
-		<div class="col-sm-2 left-margin shadow p-2 mb bg-white rounded">
-			<img src="assets/images/profile_pic.jpg" class="shadow p-2 mb bg-white rounded" width="175" height="225" alt="profile picture">
-			<h6 class="h6 shadow p-2 mb bg-dark rounded text-white text-center"> Favorite Bands</h6>
-			<ul>
-				<li class="small">Young the Giant</li>
-				<li class="small">Big Head Todd and the Monsters</li>
-				<li class="small">Blues Traveler</li>
-				<li class="small">New Politics</li>
-				<li class="small">Leon Bridges</li>
-				<li class="small">U2</li>
-				<li class="small">Fitz and the Tantrums</li>
-				<li class="small">Cage the Elephant</li>
-				<li class="small">Weezer</li>
-			</ul>
-			<h6 class="h6 shadow p-2 mb bg-dark rounded text-white text-center"> Hobbies</h6>
-			<ul>
-				<li class="small">Cycling</li>
-				<li class="small">Snowbaording</li>
-				<li class="small">Crossfit</li>
-				<li class="small">Technology</li>
-			</ul>
-		</div>
-		<div class="col-sm-9 left-margin shadow p-2 mb bg-white rounded">
-			<p class="my-padding"> My name is Jason Martin and I am a Colorado native.  I have been married for 23 years and have 3 teenage children.
+		<div class="row">
+			<div class="col-sm-2">
+				<img src="assets/images/profile_pic.jpg" class="shadow p-2 mb bg-white rounded heading" width="175" height="225" alt="profile picture">
+					<h6 class="h6 shadow p-2 mb bg-dark rounded text-white text-center fix-heading-width"> Favorite Bands</h6>
+						<ul class="fix-heading-width">
+							<li class="small">Young the Giant</li>
+							<li class="small">Big Head Todd and the Monsters</li>
+							<li class="small">Blues Traveler</li>
+							<li class="small">New Politics</li>
+							<li class="small">Leon Bridges</li>
+							<li class="small">U2</li>
+							<li class="small">Fitz and the Tantrums</li>
+							<li class="small">Cage the Elephant</li>
+							<li class="small">Weezer</li>
+						</ul>
+					<h6 class="h6 shadow p-2 mb bg-dark rounded text-white text-center fix-heading-width"> Hobbies</h6>
+						<ul class="fix-heading-width">
+							<li class="small">Cycling</li>
+							<li class="small">Snowbaording</li>
+							<li class="small">Crossfit</li>
+							<li class="small">Technology</li>
+							<li class="small">Camping</li>
+							<li class="small">Music</li>
+						</ul>
+			</div>
+			<div class="col-lg-9 col-md-8 col-sm-12 auto-center clearfix">
+				<p class="my-padding"> My name is Jason Martin and I am a Colorado native.  I have been married for 23 years and have 3 teenage children.
 				I have been in IT for over 20 years while spending most of that time as a Sr. Systems Engineer building infrastructure in data centers, and more recently
 				Amazon's AWS cloud. I am currently working as a Sr. Security Architect and I'm interested in moving onto a red team that conducts penetration testing
 				against web applications and infrastructure.  I received my Certified Ethical Hacking (CEH) certificate this year and want to expand on that knowledge
 				by learning full stack web development.  All of my programming has been self taught over the years, so there are many gaps that need to be filled.
-			</p>
-			<p class="my-padding">I love Colorado and the outdoors, most of my spare time is spent outside. I love road biking, snowboarding and doing Crossfit. My wife Stephanie
-			and I love concerts and spend the summer seeing our favorite bands. We became hockey fans when the Quebec Nordiques moved to Colorado in 1996.  My son started
-			playing hockey when he turned 8 and played throughout high school. We called our daughters rink rats, because of the amount of time we all spent traveling to different ice rinks.  He is now a sophomore in college wanting to pursue
-			audio engineering.
-			</p>
-			<p class="my-padding"> My oldest daughter is the strongest person in our family because she was diagnosed with Type 1 Diabetes when she was only 3 years old.  We just passed her 13th anniversary
-			of living with this disease.  We raise money to support the American Diabetes Association every year by riding in the Tour de Cure fundraiser.  Our family team has raised
-			close to $250,000.000 for the ADA.  She is a huge role model for those living with Diabetes and is always encouraging them to keep up the fight!  I couldn't be
-			more proud!  She also shoots archery and competes in monthly tournaments.
-			</p>
-			<p class="my-padding">The baby of the family is now in 8th grade. Between her, my wife and I there is a lot of competition on who is funnier!  I do have the advantage because of the
-			amount of dad jokes out there.  She likes trying out different sports.  She played, soccer, ran track, competed in gymnastics and recently started playing volleyball at school.
-			</p>
-			<p class="my-padding">I am truly blessed with a great family and career.  I love technology and enjoy learning new things every chance I get.
-			</p>
+				</p>
+				<p class="my-padding">I love Colorado and the outdoors, most of my spare time is spent outside. I love road biking, snowboarding and doing Crossfit. My wife Stephanie
+				and I love concerts and spend the summer seeing our favorite bands. We became hockey fans when the Quebec Nordiques moved to Colorado in 1996.  My son started
+				playing hockey when he turned 8 and played throughout high school. We called our daughters rink rats, because of the amount of time we all spent traveling to different ice rinks.  He is now a sophomore in college wanting to pursue
+				audio engineering.
+				</p>
+				<p class="my-padding"> My oldest daughter is the strongest person in our family because she was diagnosed with Type 1 Diabetes when she was only 3 years old.  We just passed her 13th anniversary
+				of living with this disease.  We raise money to support the American Diabetes Association every year by riding in the Tour de Cure fundraiser.  Our family team has raised
+				close to $250,000.000 for the ADA.  She is a huge role model for those living with Diabetes and is always encouraging them to keep up the fight!  I couldn't be
+				more proud!  She also shoots archery and competes in monthly tournaments.
+				</p>
+				<p class="my-padding">The baby of the family is now in 8th grade. Between her, my wife and I there is a lot of competition on who is funnier!  I do have the advantage because of the
+				amount of dad jokes out there.  She likes trying out different sports.  She played, soccer, ran track, competed in gymnastics and recently started playing volleyball at school.
+				</p>
+				<p class="my-padding">I am truly blessed with a great family and career.  I love technology and enjoy learning new things every chance I get.
+				</p>
+			</div>
 		</div>
-		<div class="col">
-		</div>
-	</div>
 </div>
-
-
-
-
-
-<!--		<div class="row">-->
-<!--			<div class="col-md-3">Lorem ipsum dolo est vitae est placerat lacinia. Proin auctor dictum massa id blandit.scipit sagittis metus ut.</div>-->
-<!--			<div class="col-md-3">Lorem ipsum dolor signissim tellus. Vivamum est vitae est placerat lacinia. Proin auctor dictum massa id blandit.scipit sagittis metus ut.</div>-->
-<!--			<div class="col-md-3">acilisis nunc. Vestibulum dictum est vitae est placerat lacinia. Proin auctor dictum massa id blandit.scipit sagittis metus ut.</div>-->
-					<div class="col-md-3"></div>
-<!--		</div>-->
-<!--		<hr>-->
-<!--		<div class="row">-->
-<!--			<div class="col-md-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue enim, eget rhoncus neque pretium ut. sagittis metus ut</div>-->
-<!--			<div class="col-md-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanadfwrfwer lobortis augue enim, eget rhoncus neque pretium ut. sagittis metus ut</div>-->
-<!--			<div class="col-md-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobor augue enim, eget rhoncus neque pretium ut. sagittis metus ut</div>-->
-<!--			<div class="col-md-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean loborwerqwerqwervqtis augue enim, eget rhoncus neque pretium ut. sagittis metus ut</div>-->
-<!--			<div class="col-md-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenem, eget rhoncus neque pretium ut. sagittis metus ut</div>-->
-<!--			<div class="col-md-2">Lorem ipsum dolor sit amet, consectetur adipiscing elitan lobortis augue enim, eget rhoncus neque pretium ut. sagittis metus ut</div>-->
-<!--		</div>-->
-<!--		<hr>-->
-<!--		<div class="row">-->
-<!--			<div class="col-md-6">coluLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis augue enim, eget rhoncus neque pretium ut. Duis laoreet ligula eget nisl laoreet, vitae tincidunt nunc ultricies. Pellentesque magna quam, volutpat et tempus id, efficitur ut sapien. Aenean ac finibus sapien, vel dignissim tellus. Vivamus urna turpis, tempor quis fringilla eu, convallis facilisis nunc. Vestibulum dictum est vitae est placerat lacinia. Proin auctor dictum massa id blandit. Aenean quis mi et mauris viverra tempor. Curabitur sem elit, suscipit sagittis metus utmn</div>-->
-<!--			<div class="col-md-6">colLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis augue enim, eget rhoncus neque pretium ut. Duis laoreet ligula eget nisl laoreet, vitae tincidunt nunc ultricies. Pellentesque magna quam, volutpat et tempus id, efficitur ut sapien. Aenean ac finibus sapien, vel dignissim tellus. Vivamus urna turpis, tempor quis fringilla eu, convallis facilisis nunc. Vestibulum dictum est vitae est placerat lacinia. Proin auctor dictum massa id blandit. Aenean quis mi et mauris viverra tempor. Curabitur sem elit, suscipit sagittis metus utumn</div>-->
-<!--		</div>-->
-
-
-<!--	</div>-->
-
 </body>
 </html>
