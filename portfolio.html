@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Grid</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
@@ -9,67 +10,60 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
 <div class="container">
-	<nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-dark bg-dark shadow p-2 mb rounded" style="padding: 1px; width: 100%">
+	<nav class="navbar col-md-12 navbar-toggleable-md navbar-expand-lg navbar-dark bg-dark shadow p-2 mb rounded" style="padding: 1px; width: 100%">
 		<img src="assets/images/cycling_pic.png" alt="brand_pic" width="60px" height="60px">
-		<button id="nav-btn" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarDiv" aria-expanded="false" aria-label="Toggle navigation">
+
+		<button id="nav-btn" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
+
 		<div class="container">
-			<div class="collapse navbar-collapse" id="navbarDiv">
-				<div class="navbar-nav mr-auto">
-					<a class="nav-link navLink" href="index.html"><h5>About</h5></a>
-					<a class="nav-link navLink" href="portfolio.html"><h5>Portfolio</h5></a>
-					<a class="nav-link navLink" href="contact.html"><h5>Contact</h5></a>
-				</div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html"><h5>About</h5></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="portfolio.html"><h5>Portfolio</h5></a>
+					</li>
+					<a class="nav-link" href="contact.html"><h5>Contact</h5></a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</nav>
-<div class="container">
-	<div class="jumbotron">
+<!--</div>-->
+
+<!--<div class="container">-->
+	<div class="jumbotron col-md-12">
 		<h1 class="display-6">Portfolio</h1>
-			<p class="lead">Welcome to my portfolio of all my favorite things.</p>
+			<p class="lead">Welcome to the portfolio of all my favorite things.</p>
 		<hr class="my-4">
-			<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+		<div class="row img-center">
+			<div class="col-sm-12">
+				<img class="p-1" src="assets/images/fam.png">
+				<img class="p-1" src="assets/images/family2.png">
+				<img class="p-1" src="assets/images/redrocks.png">
+				<img class="p-1" src="assets/images/avs.png">
+			</div>
+		</div>
+		<div class="row img-center">
+			<div class="col-sm-12">
+				<img class="p-1" src="assets/images/cycling.png">
+				<img class="p-1" src="assets/images/crossfit.png">
+				<img class="p-1" src="assets/images/snowboarding.png">
+				<img class="p-1" src="assets/images/tech.png">
+			</div>
 	</div>
 </div>
-
-<div class="style">
-	<section>
-		<article>
-			<h2>Portfolio</h2>
-			<hr>
-			<div class="family boxes">
-				<h4 class="banner1"> Family</h4>
-			</div>
-			<div class="sports boxes">
-				<h4 class="banner2"> Sports</h4>
-			</div>
-			<div class="music boxes">
-				<h4 class="banner1"> Music</h4>
-			</div>
-			<div class="cycling boxes">
-				<h4 class="banner2"> Cycling</h4>
-			</div>
-			<div class="crossfit boxes">
-				<h4 class="banner2"> Crossfit</h4>
-			</div>
-			<div class="snowboarding boxes">
-				<h4 class="banner1"> Snowboarding</h4>
-			</div>
-			<div class="technology boxes">
-				<h4 class="banner2"> Technology</h4>
-			</div>
-			<div class="family2 boxes">
-				<h4 class="banner1"> Happiness</h4>
-			</div>
-
-		</article>
-	</section>
-	<footer>
-		Copyright &copy;
+	<footer class="page-footer font-small blue">
+		<div class="footer-copyright text-center bg-dark text-light py-3">© 2019 Copyright:
+			<a href="https://ferb00000100.github.io">ferb00000100 </a>
+		</div>
 	</footer>
 </div>
 

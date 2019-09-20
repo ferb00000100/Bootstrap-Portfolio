@@ -1,32 +1,6 @@
 
-body {
-    margin: 20px;
-    /*background-color: lightgrey;*/
-}
-
-.my-jumbtron {
-    background-color: darkgreen;
-}
-.my-container {
-    border: 1px solid;
-}
-.my-row {
-    border: 2px solid blue;
-    height: 300px;
-}
-.my-col {
-    border: 2px dotted;
-    height: 100px;
-}
-
-.top-margin {
-    margin-top: 10px;
-}
-.left-margin {
-    margin-left: 10px;
-}
-.my-padding {
-    padding: 3px;
+.full-heigth {
+    height: 100%;
 }
 .auto-center {
     margin: auto;
@@ -36,7 +10,9 @@ body {
     width: 175px;
 }
 
-
+.img-center {
+    text-align:center
+}
 
 /*Extra small devices –Phones (< 768px)*/
 /*Small devices – Tablets (>= 768px)*/

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Grid</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
@@ -12,51 +13,61 @@
 <body>
 
 <div class="container">
-	<nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-dark bg-dark shadow p-2 mb rounded" style="padding: 1px; width: 100%">
+	<nav class="navbar col-md-12 navbar-toggleable-md navbar-expand-lg navbar-dark bg-dark shadow p-2 mb rounded" style="padding: 1px; width: 100%">
 		<img src="assets/images/cycling_pic.png" alt="brand_pic" width="60px" height="60px">
-		<button id="nav-btn" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarDiv" aria-expanded="false" aria-label="Toggle navigation">
+
+		<button id="nav-btn" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
+
 		<div class="container">
-			<div class="collapse navbar-collapse" id="navbarDiv">
-				<div class="navbar-nav mr-auto">
-					<a class="nav-link navLink" href="index.html"><h5>About</h5></a>
-					<a class="nav-link navLink" href="portfolio.html"><h5>Portfolio</h5></a>
-					<a class="nav-link navLink" href="contact.html"><h5>Contact</h5></a>
-				</div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html"><h5>About</h5></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="portfolio.html"><h5>Portfolio</h5></a>
+					</li>
+					<a class="nav-link" href="contact.html"><h5>Contact</h5></a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</nav>
-
-	<div class="container">
-<form>
-	<div class="form-group top-margin">
-		<label for="exampleFormControlInput1">Email address</label>
-		<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-	</div>
-	<div class="form-group">
-		<label for="exampleFormControlSelect1">Example select</label>
-		<select class="form-control" id="exampleFormControlSelect1">
-			<option>1</option>
-			<option>2</option>
-			<option>3</option>
-			<option>4</option>
-			<option>5</option>
-		</select>
-	</div>
-	<div class="form-group">
-		<label for="exampleFormControlSelect2">Example multiple select</label>
-		<select multiple class="form-control" id="exampleFormControlSelect2">
-			<option>1</option>
-			<option>2</option>
-			<option>3</option>
-			<option>4</option>
-			<option>5</option>
-		</select>
-	</div>
-	<div class="form-group">
-		<label for="exampleFormControlTextarea1">Example textarea</label>
-		<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-	</div>
-</form>
 </div>
+
+<div class="container full-heigth">
+	<form>
+		<div class="form-group row mt-2">
+			<label for="inputEmail3" class="col-sm-2 col-form-label">Email Address</label>
+			<div class="col-sm-10">
+				<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="inputName3" class="col-sm-2 col-form-label">Name</label>
+			<div class="col-sm-10">
+				<input type="password" class="form-control" id="inputName3" placeholder="Name">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="exampleFormControlTextarea1">Message</label>
+			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+		</div>
+		<div class="form-group row">
+			<div class="col-sm-10">
+				<button onclick="alert('You pressed the button!')" type="submit" class="btn btn-dark">Submit</button>
+			</div>
+		</div>
+	</form>
+	<div>
+		<footer class="page-footer font-small blue">
+			<div class="footer-copyright text-center bg-dark text-light py-3">© 2019 Copyright:
+				<a href="https://ferb00000100.github.io">ferb00000100 </a>
+			</div>
+		</footer>
+	</div>
+</div>
+</body>
+</html>
