@@ -1,7 +1,4 @@
 
-.full-heigth {
-    height: 100%;
-}
 .auto-center {
     margin: auto;
 }
@@ -12,6 +9,9 @@
 
 .img-center {
     text-align:center
+}
+.background-image {
+    background: url("../images/qbkls.png");
 }
 
 /*Extra small devices –Phones (< 768px)*/

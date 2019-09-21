@@ -5,11 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Grid</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
+
 <body>
 
 <div class="container">
@@ -37,37 +38,39 @@
 	</nav>
 </div>
 
-<div class="container full-heigth">
-	<form>
-		<div class="form-group row mt-2">
-			<label for="inputEmail3" class="col-sm-2 col-form-label">Email Address</label>
-			<div class="col-sm-10">
-				<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-			</div>
+<div class="container">
+	<div class="col">
+		<div class="mt-3 shadow p-3 background-image">
+			<form>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+				<div class="form-group">
+					<label> Name </label>
+					<input class="form-control" type="text" placeholder="Default input">
+				</div>
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1">Message</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-10">
+						<button onclick="alert('You pressed the button!')" type="submit" class="btn btn-dark">Submit</button
+					></div>
+				</div>
+			</form>
 		</div>
-		<div class="form-group row">
-			<label for="inputName3" class="col-sm-2 col-form-label">Name</label>
-			<div class="col-sm-10">
-				<input type="password" class="form-control" id="inputName3" placeholder="Name">
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="exampleFormControlTextarea1">Message</label>
-			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-		</div>
-		<div class="form-group row">
-			<div class="col-sm-10">
-				<button onclick="alert('You pressed the button!')" type="submit" class="btn btn-dark">Submit</button>
-			</div>
-		</div>
-	</form>
-	<div>
-		<footer class="page-footer font-small blue">
-			<div class="footer-copyright text-center bg-dark text-light py-3">© 2019 Copyright:
-				<a href="https://ferb00000100.github.io">ferb00000100 </a>
-			</div>
-		</footer>
 	</div>
 </div>
+<div class="container">
+	<nav class="navbar col-md-12 mt-3 d-flex justify-content-center navbar-toggleable-md navbar-expand-lg navbar-dark bg-dark shadow p-2 mb rounded" style="padding: 1px; width: 100%">
+		<div class="footer-copyright bg-dark text-light py-3">© 2019 Copyright:
+				<a href="https://ferb00000100.github.io">ferb00000100 </a>
+		</div>
+	</nav>
+</div>
+
 </body>
 </html>
