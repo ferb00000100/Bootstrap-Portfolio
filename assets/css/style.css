@@ -1,3 +1,14 @@
+html {
+    height: 100%;
+}
+
+body {
+     height: 100%;
+ }
+
+.container-height {
+    height: 100%;
+}
 
 .auto-center {
     margin: auto;
@@ -10,7 +21,9 @@
 .img-center {
     text-align:center
 }
+
 .background-image {
+    height: 100%;
     background: url("../images/qbkls.png");
 }
 
