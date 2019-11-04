@@ -33,6 +33,24 @@ body {
     background: url("../images/qbkls.png");
 }
 
+p{
+    color: #dddddd;
+}
+
+h6 {
+    color: black;
+}
+
+.home {
+    color: black;
+}
+
+li {
+    color: #dddddd;
+
+}
+
+
 @media screen and (max-width: 415px) {
     .imgPIC {
 
